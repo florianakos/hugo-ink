@@ -4,7 +4,7 @@
 <body>
 	<div class="container wrapper">
 		{{ partial "head.html" . }}
-		<span> SOME Fun stuff to write about ...</span><br><br>
+		<h3> Below are my most recent blog posts! </h3><br>
 		<div class="recent-posts section">
 			<div class="posts">
 				{{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
