@@ -315,7 +315,7 @@ ul {
     padding: 0;
     border: none;
     min-width: 50px;
-    margin-right: 35px;
+    margin-right: 0px;
 }
 
 .header .site-description nav ul svg {
@@ -488,7 +488,7 @@ ul {
 
     .header .nav.social li {
         margin: 0;
-        margin-left: 105px;
+        margin-left: 20px;
     }
     .header .nav li {
         margin: 0 10px 0 0;
