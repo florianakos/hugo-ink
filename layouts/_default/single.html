@@ -19,21 +19,21 @@
 					<h1 class="title">{{ .Title }}</h1>
 				</div>
 			</div>
+			
+			<div class="markdown">
+				{{ .Content }}
+			</div>
+			<h4><b>Tags:</b></h>
 			<div class="tags">
 				{{ if ne .Type "page" }}
 					{{ if gt .Params.tags 0 }}
 						<ul class="flat">
 							{{ range .Params.tags }}
-							<!-- <li> -->
 								<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-							<!-- </li> -->
 							{{ end }}
 						</ul>
 					{{ end }}
 				{{ end }}
-			</div>
-			<div class="markdown">
-				{{ .Content }}
 			</div>
 
 			{{- if .Site.DisqusShortname -}}

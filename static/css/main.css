@@ -350,14 +350,14 @@ ul {
 }
 
 .recent-posts .posts .post {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
 }
 
 .post-header {
     display: flex;
 }
 .post-header .meta .date {
-    margin-right: 30px;
+    margin-right: 25px;
     width: 64px;
     text-align: center;
 }
@@ -381,7 +381,7 @@ ul {
     margin: 0 0 10px 0;
 }
 .post .post-header {
-    margin-bottom: 30px;
+    margin-bottom: 5px;
 }
 
 .post .draft-label {
