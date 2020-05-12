@@ -23,19 +23,19 @@
 			<div class="markdown">
 				{{ .Content }}
 			</div>
-			<h4><b>Tags:</b></h>
-			<div class="tags">
-				{{ if ne .Type "page" }}
-					{{ if gt .Params.tags 0 }}
-						<ul class="flat">
-							{{ range .Params.tags }}
-								<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-							{{ end }}
-						</ul>
-					{{ end }}
+			{{ if ne .Type "page" }}
+				{{ if gt .Params.tags 0 }}
+				<h4><b>Tags:</b></h>
+				<div class="tags"></div>
+					<ul class="flat">
+						{{ range .Params.tags }}
+							<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+						{{ end }}
+					</ul>
+				</div>
 				{{ end }}
-			</div>
-
+			{{ end }}
+			
 			{{- if .Site.DisqusShortname -}}
 			{{- $.Scratch.Set "isDisqus" true -}}
 
