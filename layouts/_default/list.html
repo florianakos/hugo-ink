@@ -7,7 +7,7 @@
 		{{ partial "head.html" . }}
 
 		{{ if isset .Data "Term" }}
-			<h2>{{ .Data.Term }}</h2>
+			<h3>Posts tagged: "{{ .Data.Term }}"</h3>
 		{{ else }}
 		<h2 class="page-title">{{ .Name }}</h2>
 		{{ end }}
